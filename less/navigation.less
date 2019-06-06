@@ -8,13 +8,29 @@ nav {
   align-items: center;
   border-bottom: 2px dashed @navigation-border;
   padding-bottom: 20px;
+  @media @mobile {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 0;
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 3.2rem;
+    }
+  }
   .home-nav {
     padding-left: 40%;
+    @media @mobile {
+      padding: 0;
+    }
   }
   a {
     text-decoration: none;
     color: black;
     font-size: 1.6rem;
     padding: 15px;
+    @media @mobile {
+      padding: 5px;
+    }
   }
 }
